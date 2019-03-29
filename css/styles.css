@@ -4,6 +4,23 @@ body {
   margin: 5% 15%;
 }
 
+#myHeader {
+  padding: 0;
+}
+
+#myHeader p {
+  padding: 10px;
+}
+
+#titleHeader {
+  background-color: #36494E;
+  color: #eee;
+  width: inherit;
+}
+
+#surveyForm {
+  background-color: #eee;
+}
 .rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet {
   display: none;
 }
