@@ -41,9 +41,24 @@ body {
 }
 
 .buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding-bottom: 5px;
 }
 
 .panel {
   width: 75%;
+}
+
+/* Media queries to override built-in bootstrap */
+@media (min-width: 768px) {
+  .container {
+      width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
