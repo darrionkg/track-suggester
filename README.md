@@ -7,12 +7,12 @@
 
 ## Description
 
-_ This is a survey form that asks the user a list of questions, and tells them a path that would best fit their answers. The different tracks offered are:_
-*Ruby/Rails*
-*PHP/Drupal*
-*Java/Android*
-*CSS/Design*
-*C#/.NET*
+_This is a survey form that asks the user a list of questions, and tells them a path that would best fit their answers. The different tracks offered are:_
+1. Ruby/Rails
+2. PHP/Drupal
+3. Java/Android
+4. CSS/Design*
+5. C#/.NET*
 
 ## Setup/Installation Requirements
 
