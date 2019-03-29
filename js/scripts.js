@@ -1,5 +1,7 @@
 $(document).ready(function() {
   $("#surveyForm").submit(function(event) {
+    $(".rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet").hide();
+
     var answer1 = $("input:radio[name=environment]:checked").val();
     var answer2 = $("input:radio[name=frontBackEnd]:checked").val();
     var answer3 = $("input:radio[name=problemSolving]:checked").val();
@@ -126,7 +128,7 @@ $(document).ready(function() {
       }
     } else {
       console.log("Unknown Error.")
-      alert("Error. Refresh page");
+      location.reload();
     }
 
     event.preventDefault();
