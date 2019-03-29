@@ -11,7 +11,7 @@ $(document).ready(function() {
     var java = 0;
     var css = 0;
     var cSharp = 0;
-
+    // Question 1
     if(answer1 === "startup") {
       ruby += 1;
       php += 1;
@@ -27,7 +27,25 @@ $(document).ready(function() {
       php += 1;
       css += 1;
     }
-    
+    //Question 2
+    if(answer2 === "frontEnd") {
+      css += 1;
+    } else {
+      ruby += 1;
+      php += 1;
+      java += 1;
+      cSharp += 1;
+    }
+    //Question 3
+    if(answer3 === "frontEnd") {
+      css += 1;
+    } else {
+      ruby += 1;
+      php += 1;
+      java += 1;
+      cSharp += 1;
+    }
+
     console.log(answer1);
     console.log(answer2);
     console.log(answer3);
