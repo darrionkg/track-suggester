@@ -7,12 +7,14 @@ $(document).ready(function() {
     var answer3 = $("input:radio[name=problemSolving]:checked").val();
     var answer4 = $("#webMobile").val();
     var answer5 = $("#language").val();
+
     // language points
     var ruby = 0;
     var php = 0;
     var java = 0;
     var css = 0;
     var cSharp = 0;
+
     // Question 1
     if(answer1 === "startup") {
       ruby += 1;
@@ -25,14 +27,14 @@ $(document).ready(function() {
     } else if(answer1 === "large") {
       cSharp += 1;
       java += 1;
-    } else {
+    } else if(answer1 === "selfEmployed") {
       php += 1;
       css += 1;
     }
     //Question 2
     if(answer2 === "frontEnd") {
       css += 1;
-    } else {
+    } else if(answer === "backEnd") {
       ruby += 1;
       php += 1;
       java += 1;
@@ -41,7 +43,7 @@ $(document).ready(function() {
     //Question 3
     if(answer3 === "frontEnd") {
       css += 1;
-    } else {
+    } else if(answer4 === "backEnd") {
       ruby += 1;
       php += 1;
       java += 1;
@@ -53,10 +55,9 @@ $(document).ready(function() {
       php += 1;
       css += 1;
       cSharp += 1;
-    } else {
+    } else if(answer4 === "mobile") {
       java += 1;
     }
-
     //Question 5
     if(answer5 === "ruby") {
       ruby += 2;
