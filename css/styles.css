@@ -21,6 +21,20 @@ body {
 #surveyForm {
   background-color: #eee;
 }
+
+.form-group {
+  margin-top: 5%;
+}
+
+.question5 {
+  margin-bottom: 7%;
+}
+
 .rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet {
   display: none;
+  margin-top: 5px;
+}
+
+.buttonContainer {
+  padding-bottom: 5px;
 }
