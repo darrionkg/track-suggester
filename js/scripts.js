@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#surveyForm").submit(function(event) {
-    $(".rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet").hide();
+    $(".rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet, #noSelection").hide();
 
     var answer1 = $("input:radio[name=environment]:checked").val();
     var answer2 = $("input:radio[name=frontBackEnd]:checked").val();
@@ -34,7 +34,7 @@ $(document).ready(function() {
     //Question 2
     if(answer2 === "frontEnd") {
       css += 1;
-    } else if(answer === "backEnd") {
+    } else if(answer2 === "backEnd") {
       ruby += 1;
       php += 1;
       java += 1;
@@ -43,7 +43,7 @@ $(document).ready(function() {
     //Question 3
     if(answer3 === "frontEnd") {
       css += 1;
-    } else if(answer4 === "backEnd") {
+    } else if(answer3 === "backEnd") {
       ruby += 1;
       php += 1;
       java += 1;
@@ -72,7 +72,9 @@ $(document).ready(function() {
     }
 
     //Shows Results. If 2 values are equal, shows both.
-    if(ruby >= php && ruby >= java && ruby >= css && ruby >= cSharp) {
+    if(ruby === 0 && php === 0 && java === 0 && css === 0 && cSharp === 0) {
+      $("#noSelection").show();
+    } else if(ruby >= php && ruby >= java && ruby >= css && ruby >= cSharp) {
       $(".rubyRails").show();
       if(ruby === php) {
         $(".phpDrupal").show();
@@ -131,8 +133,6 @@ $(document).ready(function() {
       console.log("Unknown Error.")
       location.reload();
     }
-
     event.preventDefault();
-
   });
 });
