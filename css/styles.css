@@ -1,3 +1,9 @@
+body {
+  background-color: #C1DFF0;
+  text-align: center;
+  margin: 5% 15%;
+}
+
 .rubyRails, .phpDrupal, .javaAndroid, .cssDesign, .cSharpNet {
   display: none;
 }
