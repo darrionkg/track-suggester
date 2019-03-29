@@ -9,12 +9,12 @@
     <title>Development Track Survey</title>
   </head>
   <body>
-    <form class="container" id="the-form">
-      <h4>What type of business environment do you prefer?</h4>
+    <form class="container" id="workEnvironment">
+      <h4>What type of work environment do you prefer?</h4>
       <div class="radio">
         <label>
           <input type="radio" name="environment" value="startup">
-          Startup
+          Startup company
         </label>
       </div>
       <div class="radio">
@@ -31,7 +31,7 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="environment" value="self-employed">
+          <input type="radio" name="environment" value="selfEmployed">
           Self-employed
         </label>
       </div>
@@ -41,19 +41,55 @@
       <h4>Which option interests you most??</h4>
       <div class="radio">
         <label>
-          <input type="radio" name="environment" value="startup">
+          <input type="radio" name="frontBackEnd" value="frontEnd">
           Spending time making a webpage attractive, perfecting the user interface portion of the project
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="environment" value="small" checked>
+          <input type="radio" name="frontBackEnd" value="backEnd" checked>
           Solving problems to make a database run faster and more efficient
         </label>
     </form>
 
+    <form class="container" id="problemSolving">
+      <h4>What type of problem solving do you like most?</h4>
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontBackEnd" value="frontEnd">
+          Figuring out how to make something better that already works
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontBackEnd" value="backEnd" checked>
+          Figuring out a design to make something complicated work
+        </label>
+    </form>
+
+
+    <form class="container">
+      <h6>Do you like the idea of creating webpages, or mobile applications?</h6>
+      <select class="surveyForm" id="developmentType">
+        <option value="web">Web Pages</option>
+        <option value="mobile">Mobile Apps </option>
+      </select>
+    </form>
+
+    <form class="container">
+      <h6>If you have previous development experience, which language do you like most?</h6>
+      <select class="surveyForm" id="developmentLanguage">
+        <option value="none">No previous experience</option>
+        <option value="ruby">Ruby</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="css">CSS</option>
+        <option value="cSharp">C#</option>
+      </select>
+    </form>
+
     <div class="button-container">
-      <button class="btn btn-info submit-button" type="submit" name="button">Submit</button>
+      <button class="btn btn-info" type="submit" name="button">Submit</button>
     </div>
   </body>
 </html>
