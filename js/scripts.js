@@ -6,7 +6,7 @@ $(document).ready(function() {
     var answer4 = $("#webMobile").val();
     var answer5 = $("#language").val();
     // language points
-    var ruby = 0
+    var ruby = 0;
     var php = 0;
     var java = 0;
     var css = 0;
@@ -70,58 +70,64 @@ $(document).ready(function() {
 
     //Shows Results. If 2 values are equal, shows both.
     if(ruby >= php && ruby >= java && ruby >= css && ruby >= cSharp) {
-      (".rubyRails").show();
+      $(".rubyRails").show();
       if(ruby === php) {
-        (".phpDrupal").show();
+        $(".phpDrupal").show();
       } else if(ruby === java) {
-        (".javaAndroid").show();
+        $(".javaAndroid").show();
       } else if(ruby === css) {
-        (".cssDesign").show();
-      } else if(ruby === cSharp)
-        (".cSharpNet").show();
-    } else if(php >= ruby && php >= java && php >= css && php >= cSharp) {
-      (".phpDrupal").show();
-      if(php === ruby) {
-        (".rubyRails").show();
-      } else if(php === java) {
-        (".javaAndroid").show();
-      } else if(php === css) {
-        (".cssDesign").show();
-      } else if(php === cSharp)
-        (".cSharpNet").show();
-    } else if(java >= ruby && java >= php && java >= css && java >= cSharp) {
-      (".javaAndroid").show();
-      if(java === ruby) {
-        (".rubyRails").show();
-      } else if(java === php) {
-        (".phpDrupal").show();
-      } else if(java === css) {
-        (".cssDesign").show();
-      } else if(java === cSharp)
-        (".cSharpNet").show();
-    } else if(css >= ruby && css >= php && css >= java && css >= cSharp) {
-      (".cssDesign").show();
-      if(css === ruby) {
-        (".rubyRails").show();
-      } else if(css === php) {
-        (".phpDrupal").show();
-      } else if(css === java) {
-        (".javaAndroid").show();
-      } else if(css === cSharp)
-        (".cSharpNet").show();
-    } else if(cSharp >= ruby && cSharp >= php && cSharp >= java && cSharp >= cSharp) {
-      (".cSharpNet").show();
-      if(cSharp === ruby) {
-        (".rubyRails").show();
-      } else if(cSharp === php) {
-        (".phpDrupal").show();
-      } else if(cSharp === java) {
-        (".javaAndroid").show();
-      } else if(cSharp === css)
-        (".cssDesign").show();
-      } else {
-        console.log("Unknown Error.")
+        $(".cssDesign").show();
+      } else if(ruby === cSharp) {
+        $(".cSharpNet").show();
       }
+    } else if(php >= ruby && php >= java && php >= css && php >= cSharp) {
+      $(".phpDrupal").show();
+      if(php === ruby) {
+        $(".rubyRails").show();
+      } else if(php === java) {
+        $(".javaAndroid").show();
+      } else if(php === css) {
+        $(".cssDesign").show();
+      } else if(php === cSharp) {
+        $(".cSharpNet").show();
+      }
+    } else if(java >= ruby && java >= php && java >= css && java >= cSharp) {
+      $(".javaAndroid").show();
+      if(java === ruby) {
+        $(".rubyRails").show();
+      } else if(java === php) {
+        $(".phpDrupal").show();
+      } else if(java === css) {
+        $(".cssDesign").show();
+      } else if(java === cSharp) {
+        $(".cSharpNet").show();
+      }
+    } else if(css >= ruby && css >= php && css >= java && css >= cSharp) {
+      $(".cssDesign").show();
+      if(css === ruby) {
+        $(".rubyRails").show();
+      } else if(css === php) {
+        $(".phpDrupal").show();
+      } else if(css === java) {
+        $(".javaAndroid").show();
+      } else if(css === cSharp) {
+        $(".cSharpNet").show();
+      }
+    } else if(cSharp >= ruby && cSharp >= php && cSharp >= java && cSharp >= cSharp) {
+      $(".cSharpNet").show();
+      if(cSharp === ruby) {
+        $(".rubyRails").show();
+      } else if(cSharp === php) {
+        $(".phpDrupal").show();
+      } else if(cSharp === java) {
+        $(".javaAndroid").show();
+      } else if(cSharp === css) {
+        $(".cssDesign").show();
+      }
+    } else {
+      console.log("Unknown Error.")
+      alert("Error. Refresh page");
+    }
 
     event.preventDefault();
 
